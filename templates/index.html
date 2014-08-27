@@ -1,10 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+<html xmlns="http://www.w3.org/1999/html">
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selenium Testing</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" />
+	<script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap.min.js"></script>
+
+  </head>
+
+
+<body style="background-color: #009688;float:center;">
+
+    <div id="container" style="width:100%;text-align:center;">
+
+        <div id="header">
+            <h1 style="margin-bottom:0;">Selenium Webdriver</h1>
+        </div>
+
+        <div id="menu" style="height:500px;width:40%;float:left;">
+            First name:  <input type="text" name="firstname" id="firstname"><br>
+            Last name:   <input type="text" name="lastname" id="lastname"><br>
+            Password:    <input type="password" name="pwd"><br>
+            Birthday:  &nbsp  <input type="date" name="bday"><br>
+            Birthday (dt): <input type="datetime" name="bdaytime"><br>
+        </div>
+
+        <div id="content" style="height:500px;width:40%;float:left;">
+            E-mail: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email" name="email"><br>
+            Quantity (1 to 5): <input type="number" name="quantity" min="1" max="5"><br>
+            <div>
+                <div style="float:left;">
+                   Gender:
+                </div>
+                <div>
+                    <input type="radio" name="sex" value="male">Male
+                    <input type="radio" name="sex" value="female">Female<br>
+                </div>
+            </div>
+            <br>
+            <div>
+                <div style="float:left;">
+                   Vehicle:
+                </div>
+                <div >
+                    <input type="checkbox" name="vehicle" value="Bike">bike
+                    <input type="checkbox" name="vehicle" value="Car">car<br>
+                </div>
+            </div>
+            <br>
+            Brand: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select><br>
+            About Me:
+            <textarea rows="4" cols="50">
+            At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+            </textarea><br>
+        </div>
+
+        <div id="footer" style="clear:both;text-align:center;">
+            <input type="submit" value="Submit" id="submit" class="btn btn-default">
+        </div>
+
+    </div>
 
 </body>
 </html>
